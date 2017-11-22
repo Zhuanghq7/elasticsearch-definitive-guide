@@ -137,7 +137,8 @@ Elasticsearch 根据我们索引的文档，为((("properties")))域(称为 _属
 [NOTE]
 ====
 其他简单类型（例如 `long` ， `double` ， `date` 等）也接受 `index` 参数，但有意义的值只有 `no` 和 `not_analyzed` ，
-因为它们永远不会被分析。
+因为它们永远不会被分析。  
+*ES对字符串的支持已经大幅度修改，比如string类型可以用text类型替代，'index'参数已经不支持了并由'field.keyword'代替来实现精确匹配，请参阅最新的elasticsearch文档*
 ====
 
 ===== analyzer
